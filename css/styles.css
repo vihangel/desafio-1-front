@@ -1,0 +1,91 @@
+/* Variáveis de Cores */
+:root {
+    --primary-color: #000000;
+    --primary-highlight: #171717;
+    --grey-background: #F0F0F0;
+    --red-color: #FF3333;
+    --green-color: #01AB31;
+    --yellow-color: #FFC633;
+    --card-background-image: #F0EEED;
+    --background-intro: #F2F0F1;
+    --background-body: #FFFFFF;
+
+    /* Variáveis para espaçamento */
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+
+    /* Variáveis para tamanhos de colunas */
+    --min-column-width: 300px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    background-color: var(--background-body);
+    color: var(--primary-color);
+    /* padding: var(--spacing-medium); */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-medium);
+}
+
+
+/* Componentes globais */
+.btn-dark {
+    background-color: var(--primary-color);
+    color: var(--background-body);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 67.5px;
+    border: none;
+    border-radius: 62px;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: var(primary-highlight);
+    transform: translateY(-2px);
+}
+
+/* Botão - Versão Light */
+.btn-light {
+    background-color: var(--background-body);
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 67.5px;
+    border: none;
+    border-radius: 62px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: var(--primary-color);
+    color: var(--background-body);
+    transform: translateY(-2px);
+}
+
+/* Container width */
+.cw {
+    width: 100%;
+    max-width: 1260px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
