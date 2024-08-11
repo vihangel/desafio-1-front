@@ -1,0 +1,20 @@
+#brands {
+    padding: 40px 0;
+    background-color: var(--primary-color);
+}
+
+#brands .brands-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 22px;
+
+    background-color: var(--primary-color);
+}
+
+#brands .brands-container .brand img {
+    display: block;
+    height: 21px;
+    width: fit-content;
+}

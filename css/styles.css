@@ -1,6 +1,7 @@
 /* Variáveis de Cores */
 :root {
     --primary-color: #000000;
+    --primary-color-100: #E5E5E5;
     --primary-highlight: #171717;
     --grey-background: #F0F0F0;
     --red-color: #FF3333;
@@ -25,6 +26,10 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+}
+
 /* Estilos Globais */
 body {
     background-color: var(--background-body);
@@ -45,7 +50,7 @@ h1 {
 
 
 /* Componentes globais */
-.btn-dark {
+button {
     background-color: var(--primary-color);
     color: var(--background-body);
     font-size: 16px;
@@ -54,31 +59,39 @@ h1 {
     border: none;
     border-radius: 62px;
     cursor: pointer;
+    width: 100%;
     /* text-transform: uppercase; */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-dark:hover {
+button:hover {
     background-color: var(primary-highlight);
     transform: translateY(-2px);
 }
 
-/* Botão - Versão Light */
-.btn-light {
+
+button.light {
     background-color: var(--background-body);
     color: var(--primary-color);
-    font-size: 16px;
-    font-weight: 500;
-    padding: 15px 67.5px;
     border: none;
-    border-radius: 62px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
 }
 
-.btn-light:hover {
+button.light:hover {
     background-color: var(--primary-color);
     color: var(--background-body);
+    transform: translateY(-2px);
+}
+
+button.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color-100);
+}
+
+button.btn-outline:hover {
+    background-color: var(--primary-color-100);
+
     transform: translateY(-2px);
 }
 
@@ -88,4 +101,32 @@ h1 {
     max-width: 1260px;
     padding: 0 16px;
     margin: 0 auto;
+
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Integral CF';
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--primary-color-100);
+
+}
+
+@media (min-width: 768px) {
+    button {
+        width: auto;
+        padding: 15px 67.5px;
+    }
 }
