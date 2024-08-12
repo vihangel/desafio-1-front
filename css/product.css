@@ -3,6 +3,7 @@
     flex-direction: column;
     margin: 0 auto;
     max-width: 1024px;
+    position: relative;
 
 }
 
@@ -81,4 +82,9 @@
 .product p.value {
     font-size: 1.25rem;
     font-family: 'Satoshi-Bold';
+}
+
+.product-container button {
+    margin: 0 auto;
+
 }
