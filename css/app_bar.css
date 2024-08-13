@@ -2,7 +2,7 @@ header {
     background-color: var(--background-body);
 }
 
-header .cw {
+header .appbar-container {
     height: 65px;
     display: flex;
     justify-content: space-between;
@@ -71,7 +71,7 @@ header .cw {
 
 /* Media Queries para Desktop */
 @media (min-width: 769px) {
-    header .cw {
+    header .appbar-container {
         height: 96px;
         align-items: center;
     }

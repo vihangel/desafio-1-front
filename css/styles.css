@@ -2,6 +2,7 @@
 :root {
     --primary-color: #000000;
     --primary-color-100: #E5E5E5;
+
     --primary-highlight: #171717;
     --grey-background: #F0F0F0;
     --red-color: #FF3333;
@@ -37,6 +38,7 @@ body {
     /* padding: var(--spacing-medium); */
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -98,17 +100,38 @@ button.btn-outline:hover {
 /* Container width */
 .cw {
     width: 100%;
-    max-width: 1260px;
+    max-width: 1240px;
     padding: 0 16px;
     margin: 0 auto;
+}
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+li {
+    list-style: none;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
 
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Integral CF';
+    text-align: center;
+    line-height: 1.1;
 }
 
 h3 {

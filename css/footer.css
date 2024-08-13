@@ -1,0 +1,153 @@
+#footer {
+    background-color: var(--grey-background);
+    padding-bottom: 77px;
+    width: 100%;
+}
+
+.footer-header {
+    padding-top: 31px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.footer-infos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+}
+
+.footer-content h1 {
+    margin-bottom: 14px;
+    font-size: 1.803rem;
+
+}
+
+.footer-content h4 {
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    font-family: 'Satoshi-Medium';
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+#footer p {
+
+    font-size: 0.875rem;
+    opacity: 0.6;
+    font-family: 'Satoshi-Regular';
+
+}
+
+
+
+.footer-content a {
+    font-size: 0.875rem;
+    opacity: 0.6;
+
+    font-family: 'Satoshi-Regular';
+}
+
+
+.footer-content li {
+    list-style: none;
+    padding: 4px 0;
+}
+
+.footer-social-media {
+    margin-top: 20px;
+    display: flex;
+    height: 28px;
+    gap: 12px;
+}
+
+#footer hr {
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-brand-cards {
+    display: flex;
+
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    align-items: center;
+}
+
+
+.footer-brand-cards svg {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+
+
+    .footer-infos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .footer-content h1 {
+        font-size: 2.063rem;
+    }
+
+    .footer-content h4 {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    .footer-content {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-infos {
+        margin-left: 113px;
+        width: 100%;
+
+    }
+
+    .footer-header {
+        max-width: 248px;
+        padding: 0;
+    }
+
+    /* ///align on end footer-bottom */
+    .footer-bottom {
+        flex-direction: row;
+        align-items: space-between;
+        padding: 20px 0;
+    }
+
+
+
+
+}
