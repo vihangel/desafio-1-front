@@ -1,5 +1,6 @@
 #feedback {
     padding-top: 50px;
+    position: relative;
 }
 
 .feedback-header {
@@ -27,9 +28,10 @@
 .feedback-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: nowrap;
     overflow-x: auto;
-    width: 100vw;
+    width: 100%;
     gap: 20px;
     padding-bottom: 20px;
     margin-bottom: 60px;
@@ -57,4 +59,49 @@
     font-size: 0.875rem;
     font-family: 'Satoshi-Regular';
     opacity: 0.6;
+}
+
+@media (min-width: 1024px) {
+    .blur-row {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+    }
+
+    .blur-row .cw {
+        min-width: 100%;
+
+    }
+
+    .blur-row .blur {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        backdrop-filter: blur(3px);
+    }
+
+    /* 
+    .feedback-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: 100vw;
+        gap: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 60px;
+    } */
+
+}
+
+@media (min-width: 1240px) {
+    .blur-row .cw {
+        min-width: 1240px;
+
+    }
+
 }

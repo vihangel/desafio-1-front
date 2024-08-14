@@ -18,3 +18,9 @@
     height: 21px;
     width: fit-content;
 }
+
+@media (min-width: 1024px) {
+    #brands .brands-container {
+        justify-content: space-between;
+    }
+}

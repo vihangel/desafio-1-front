@@ -51,7 +51,7 @@
     height: 48px;
     padding: 10px 20px;
     padding-left: 52px;
-    /* Espaço para o ícone */
+
     border-radius: 24px;
     border: none;
     background-color: var(--background-body);
@@ -74,19 +74,23 @@
 
 }
 
-@media screen and (min-width: 768px) {
+
+@media (min-width: 768px) {
     #newsletter {
         padding-top: 0;
     }
 
     .newsletter-content {
+
         display: flex;
-        justify-items: center;
+        justify-content: space-between;
         align-items: center;
+
 
     }
 
     #newsletter h3 {
+        max-width: 551px;
         margin: 0;
     }
 

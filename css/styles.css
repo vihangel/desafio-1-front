@@ -35,10 +35,10 @@ img {
 body {
     background-color: var(--background-body);
     color: var(--primary-color);
-    /* padding: var(--spacing-medium); */
-    font-family: Arial, sans-serif;
+    font-family: 'Satoshi-Regular', sans-serif;
     line-height: 1.6;
-    width: 100%;
+    max-width: 100%;
+
     margin: 0;
     padding: 0;
 }
@@ -80,8 +80,8 @@ button.light {
 }
 
 button.light:hover {
-    background-color: var(--primary-color);
-    color: var(--background-body);
+    background-color: var(--primary-color-100);
+    color: var(--primary-color);
     transform: translateY(-2px);
 }
 
@@ -124,6 +124,10 @@ li {
 a {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h1 {
