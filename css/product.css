@@ -145,7 +145,13 @@
     .product-container .product-cards-row {
         margin-bottom: 26px;
         padding-bottom: 10px;
+        justify-content: center;
+        padding-right: 0;
 
+    }
+
+    .product-container .product-cards-row::-webkit-scrollbar {
+        display: none;
     }
 
 
