@@ -61,7 +61,7 @@ feedbackContainer.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - feedbackContainer.offsetLeft;
-    const walk = (x - startX) * 2; // Ajuste da velocidade de rolagem
+    const walk = (x - startX) * 1; // Ajuste da velocidade de rolagem
     feedbackContainer.scrollLeft = Math.min(Math.max(scrollLeft - walk, 0), maxScroll);
 });
 

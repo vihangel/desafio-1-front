@@ -1,6 +1,17 @@
 #feedback {
     padding-top: 50px;
     position: relative;
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    -khtml-user-select: none;
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+    user-select: none;
 }
 
 .feedback-header {
@@ -59,6 +70,7 @@
     font-size: 0.875rem;
     font-family: 'Satoshi-Regular';
     opacity: 0.6;
+
 }
 
 
