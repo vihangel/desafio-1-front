@@ -106,6 +106,66 @@ header .appbar-container {
     fill-opacity: 1;
 }
 
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    /* Alterado para abrir da esquerda */
+    background-color: var(--background-body);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.side-menu nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu nav ul li {
+    padding: 8px 16px;
+    text-align: left;
+}
+
+.side-menu nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: block;
+}
+
+.side-menu.open {
+    width: 250px;
+}
+
+/* Estilo para o ícone de fechar */
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-menu svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--primary-color);
+
+}
+
+.close-menu svg path {
+
+    fill: var(--primary-color);
+
+}
+
+.menu-icon svg {
+    cursor: pointer;
+}
+
+
 /* Media Queries para Desktop */
 @media (min-width: 769px) {
     header .appbar-container {

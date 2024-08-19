@@ -77,20 +77,22 @@
 .rating {
     display: flex;
     align-items: center;
+    justify-items: start;
     position: relative;
 }
 
 .star-container {
     display: flex;
     position: relative;
+    justify-items: start;
     margin-right: 8px;
 
 }
 
 
 .star {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     fill: var(--yellow-color);
     /* Cor da estrela preenchida */
     margin-right: 4px;

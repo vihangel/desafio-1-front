@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const cover = document.createElement('div');
         cover.classList.add('cover');
 
-        const coverWidth = ((totalStars-ratingValue) * starContainerWidth/totalStars);
+        const coverWidth = (((totalStars-ratingValue) * starContainerWidth)/totalStars);
         cover.style.width = `${coverWidth}px`;
   
 
