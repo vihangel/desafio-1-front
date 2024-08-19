@@ -167,7 +167,7 @@ header .appbar-container {
 
 
 /* Media Queries para Desktop */
-@media (min-width: 769px) {
+@media (min-width: 864px) {
     header .appbar-container {
         height: 96px;
         align-items: center;
