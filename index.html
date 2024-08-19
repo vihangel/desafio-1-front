@@ -185,7 +185,7 @@
                         <h4>T-shirt with Tape Details</h4>
                         <div class="rating">
 
-                            <p>2.1/5</p>
+                            <p>2.4/5</p>
                         </div>
                         <p class="value">$120</p>
                     </div>
@@ -415,7 +415,7 @@
         <div class="cw">
             <div class="newsletter-content">
                 <h3>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h3>
-                <form action="/" method="post">
+                <form id="newsletter-form" target="_blank" action="" method="post">
                     <div class="input-group">
                         <div class="email-container">
                             <div class="email-icon">
@@ -428,7 +428,10 @@
 
                             </div>
                             <input type="email" class="email-input" placeholder="Enter your email address">
-                        </div> <button class="light" type="submit">Subscribe to Newsletter</button>
+                        </div>
+                        <button class="light" type="submit">Subscribe to Newsletter</button>
+                        <p id="email-error" style="color: white; display: none;">Please enter a valid email address.</p>
+
                     </div>
                 </form>
             </div>

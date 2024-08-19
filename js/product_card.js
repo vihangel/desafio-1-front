@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const starsContainer = document.createElement('div');
         starsContainer.classList.add('star-container');
     
-
+        ///TODO: Para as estrelas o ideal era remover o valor do gap e adicionar essa porcentagem apenas nas estrelas
         // Adiciona as estrelas ao star-container
         for (let i = 0; i < totalStars; i++) {
             const star = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
             starsContainer.appendChild(star);
         }
 
-        // Adiciona o star-container dentro do rating antes do <p>
+
         rating.insertBefore(starsContainer, ratingElement);
 
-        // Captura a largura total do star-container após adicionar as estrelas
+       
         const starContainerWidth = starsContainer.offsetWidth;
 
         // Cria a div .cover que cobre a parte faltante
@@ -38,8 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const coverWidth = (((totalStars-ratingValue) * starContainerWidth)/totalStars);
         cover.style.width = `${coverWidth}px`;
   
-
-        // Adiciona o cover ao star-container
         starsContainer.appendChild(cover);
     });
 });

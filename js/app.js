@@ -33,30 +33,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
       // Email validation for the newsletter form
-      const form = document.querySelector("#newsletter-form");
-      const emailInput = form?.querySelector(".email-input");
-      const emailError = document.querySelector("#email-error");
+ 
+   const form = document.querySelector("#newsletter-form");
+   const emailInput = form.querySelector(".email-input");
+   const emailError = document.querySelector("#email-error");
+
+   // Verificar se os elementos foram encontrados
+   if (form && emailInput && emailError) {
+       form.addEventListener("submit", (event) => {
+           // Verificar se o e-mail é válido
+           if (!isValidEmail(emailInput.value)) {
+               event.preventDefault(); 
+               emailError.style.display = "block";
+           } else {
+               event.preventDefault(); 
+               emailError.style.display = "none"; 
+               emailInput.value = ""; 
+               console.log("Email successfully registered!");
+           }
+       });
+   }
   
-      if (form && emailInput && emailError) {
-          form.addEventListener("submit", (event) => {
-              // Prevent form submission if the email is invalid
-              if (!isValidEmail(emailInput.value)) {
-                  event.preventDefault();
-                  emailError.style.display = "block"; 
-              } else {
-                event.preventDefault();
-                emailError.style.display = "none"; 
-                emailInput.value = ""; 
-                console.log("Email successfully registered!"); 
-            }
-          });
-      }
-  
-      // Function to validate email
-      function isValidEmail(email) {
-          // Basic regular expression for email validation
-          const emailPattern = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+[^<>()\.,;:\s@\"]{2,})$/;
-          return emailPattern.test(email);
-      }
+   function isValidEmail(email) {
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+}
+
 });
 
