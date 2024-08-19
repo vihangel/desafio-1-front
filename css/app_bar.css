@@ -1,3 +1,40 @@
+#notify {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Satoshi-Regular';
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 8px 0 10px 0;
+
+}
+
+#notify a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#notify p {
+    width: 100%;
+    margin-left: 20px;
+}
+
+#notify img {
+    display: none;
+    height: 20px;
+}
+
+#notify .notify-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+
 header {
     background-color: var(--background-body);
 }
@@ -123,6 +160,12 @@ header .appbar-container {
 
     .icon-group .ic-search {
         display: none;
+
+    }
+
+
+    #notify img {
+        display: block;
 
     }
 }

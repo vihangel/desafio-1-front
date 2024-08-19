@@ -157,4 +157,9 @@ hr {
         width: auto;
         padding: 15px 67.5px;
     }
+
+    h3 {
+        font-size: 3rem;
+    }
+
 }

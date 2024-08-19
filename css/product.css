@@ -74,6 +74,38 @@
 
 }
 
+.rating {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.star-container {
+    display: flex;
+    position: relative;
+    margin-right: 8px;
+
+}
+
+
+.star {
+    width: 24px;
+    height: 24px;
+    fill: var(--yellow-color);
+    /* Cor da estrela preenchida */
+    margin-right: 4px;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--background-body);
+    /* Cor do fundo */
+    z-index: 1;
+}
+
 @media (min-width: 1024px) {
     .product-container {
         justify-content: center;
